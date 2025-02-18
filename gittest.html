@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #0078d7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .description {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+        }
+        .messages {
+            padding: 20px;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        .message {
+            margin-bottom: 15px;
+        }
+        .message .sender {
+            font-weight: bold;
+        }
+        .message .text {
+            margin: 5px 0;
+        }
+        .message .time {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .input-container {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .input-container button {
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .input-container button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Messenger App</h1>
+        </div>
+        <div class="description">
+            <h2>About the App</h2>
+            <p>This messenger app allows you to communicate with your friends and family in real-time. You can send and receive messages instantly.</p>
+        </div>
+        <div class="description"></div>
+            <h2>Features</h2>
+            <p>Our app offers a variety of features including text messaging, media sharing, and group chats. Stay connected with your loved ones easily and securely.</p>
+            <p>Look forward to our future updates and features.</p>
+        </div>
+        <div class="messages">
+            <div class="message">
+                <div class="sender">Alice</div>
+                <div class="text">Hello, how are you?</div>
+                <div class="time">10:00 AM</div>
+            </div>
+            <div class="message">
+                <div class="sender">Bob</div>
+                <div class="text">I'm good, thanks! How about you?</div>
+                <div class="time">10:02 AM</div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
